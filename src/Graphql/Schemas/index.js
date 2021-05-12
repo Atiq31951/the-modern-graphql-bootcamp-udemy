@@ -2,7 +2,7 @@ const typeDefs = `
     type Query {
         hello: String!
         getPosts(query: String!):  [Posts!]!
-        getUser(id: ID!):  User!
+        getUser(id: ID):  [User!]
     }
 
     type Posts {
